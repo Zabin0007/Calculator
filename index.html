@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <center>
+            <h2>Calculator</h2>
+
+            <div class="divv">
+                <input type="text" placeholder="Enter" id="result">
+                <br>
+                <button type="button" onclick="displayNum(7)">7</button>
+                <button type="button" onclick="displayNum(8)">8</button>
+                <button type="button" onclick="displayNum(9)">9</button>
+                <button type="button" onclick="displayNum('*')" class="operator">*</button>
+                <br>
+                <button type="button" onclick="displayNum(4)">4</button>
+                <button type="button" onclick="displayNum(5)">5</button>
+                <button type="button" onclick="displayNum(6)">6</button>
+                <button type="button" onclick="displayNum('-')" class="operator">-</button>
+                <br>
+                <button type="button" onclick="displayNum(1)">1</button>
+                <button type="button" onclick="displayNum(2)">2</button>
+                <button type="button" onclick="displayNum(3)">3</button>
+                <button type="button" onclick="displayNum('+')" class="operator">+</button>
+                <br>
+                <button type="button" onclick="clearResult()" style="background-color: red;color: white;">AC</button>
+                <button type="button" onclick="displayNum(0)" class="operator">0</button>
+                <button type="button" onclick="displayNum('/')" class="operator">/</button>
+                <button type="button" onclick="operation()" class="operator">=</button>
+                <br>
+                <button  type="button" onclick="backSpace()" style="background-color: rgb(255, 170, 0);color: white; float: right; margin-right: 23px;"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
+        </center>
+        <script src="./script.js"></script>
+</body>
+</html>
